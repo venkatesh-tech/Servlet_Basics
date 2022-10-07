@@ -14,9 +14,17 @@
   	<servlet-name>HelloServlet</servlet-name>
   	<servlet-class>com.servlets.HelloWorldServlet</servlet-class>
   </servlet>
-  
   <servlet-mapping>
   	  <servlet-name>HelloServlet</servlet-name>
   	  <url-pattern>/hello</url-pattern>                <!--  when /hello is pressed in url the call goes to HelloServlet class and service() method in it-->
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AdditionServlet</servlet-name>
+  	<servlet-class>com.servlets.AdditionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	  <servlet-name>AdditionServlet</servlet-name>
+  	  <url-pattern>/additionServlet</url-pattern>               
   </servlet-mapping>
 </web-app>	
